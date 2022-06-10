@@ -10,5 +10,5 @@ This solution was implemented to solve fees problems related to Ethereum, even f
 
 ## Interact with the contract here: 
 
-Contract: 0x51a36e1ba3fda5dc0e1b1b970c112dcaf841072b
-Aurora Explorer here https://testnet.aurorascan.dev/address/0x51a36e1ba3fda5dc0e1b1b970c112dcaf841072b
+* Contract: 0x51a36e1ba3fda5dc0e1b1b970c112dcaf841072b
+* Aurora Explorer here https://testnet.aurorascan.dev/address/0x51a36e1ba3fda5dc0e1b1b970c112dcaf841072b
