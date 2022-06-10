@@ -22,7 +22,7 @@ contract Marketplace is Ownable{
 
 
     //Function for create and storage items within the market stock
-    function createItem(string memory _title, uint _price) public {
+    function createItem(string memory _title, uint _price) public onlyOwner {
         Item item = new Item(this, _price, index); //Intansce Item contract
         stock[index]._item = item; //Save item within the stock storage in Market contract
         stock[index]._status = ItemStatus.OnSale; //Save the Item status
@@ -44,7 +44,7 @@ contract Marketplace is Ownable{
     }
 
     //Function for set to delivered the item status
-    function handleDelivery(uint _index) public {
+    function handleDelivery(uint _index) public onlyOwner {
         require( stock[_index]._status == ItemStatus.Paid, "Item not paid"); //Check if the item was already paid
         stock[_index]._status = ItemStatus.Delivered; //Update the item status to delivered
 

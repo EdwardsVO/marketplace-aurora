@@ -8,7 +8,7 @@ contract Ownable {
         _owner = msg.sender;
     }
 
-    modifier _onlyOwner() {
+    modifier onlyOwner() {
         require(isOwner(), "Only the owner can do this action");
         _;
     }
